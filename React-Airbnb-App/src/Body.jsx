@@ -3,7 +3,7 @@ import React from "react";
 function Body(){
   return (
     <section className="hero">
-      <img className="hero-image" src="./src/assets/photo-grid.png" />
+      <img className="hero-image" src="./public/images/photo-grid.png" />
       <div className="info">
           <h1 className="hero-header">Online Expereineces</h1>
           <p className="hero-text">Join unique interactive activities led by one-of-a-kind hosts-all without leaving home.</p>

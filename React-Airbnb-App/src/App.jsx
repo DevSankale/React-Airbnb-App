@@ -2,22 +2,33 @@ import React from "react"
 import Header from "./Header"
 import Body from "./Body"
 import Card from "./card"
+import data from "./data"
 
 function App() {
+
+  const cardArray = data.map((item)=>{
+
+    return (
+      <Card 
+      img={item.coverImg}
+      ratings={item.stats.rating}
+      reviewCount = {item.stats.reviewCount}
+      details={item.title}
+      amount={item.price}
+    />
+    )
+  })
+  
 
   return (
     <div>
       <Header/>
       <Body/>
-      <Card
-        img="./src/assets/katie-zaferes.png"
-        ratings="5.0"
-        reviewCount = "(6)"
-        country="Kenya"
-        details="Life lessons with Kottie Zateres"
-        amount="From $136/Person"
-      />
-     
+      <section className="cardList">
+         {cardArray}
+      </section>
+      
+  
     </div>
   )
 }

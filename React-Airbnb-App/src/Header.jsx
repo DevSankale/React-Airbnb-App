@@ -6,7 +6,7 @@ function Header(){
 
     <nav>
       
-      <img className="nav-logo" src="./src/assets/airbnb-logo.png" alt="airbnb-logo" width="82px"/>
+      <img className="nav-logo" src="./public/images/airbnb-logo.png" alt="airbnb-logo" width="82px"/>
       
     </nav>
   )
