@@ -15,7 +15,9 @@ function App() {
       reviewCount = {item.stats.reviewCount}
       details={item.title}
       amount={item.price}
-    />
+      openSpots={item.openSpots}
+      location = {item.location}
+      />
     )
   })
   
